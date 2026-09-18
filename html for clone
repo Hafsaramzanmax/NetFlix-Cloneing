@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- ================= HERO ================= -->
+
+    <section id="hero">
+
+        <img id="backgroundimage"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc96T0x_-goCfjmrdu-lKyzGPHtTPxUnL0MkN9a_dUDQ&s=10">
+
+        <div id="overlay"></div>
+
+        <!-- NAVBAR -->
+
+        <nav id="top">
+
+            <h1 id="logo">NETFLIX</h1>
+
+            <div id="navright">
+
+                <div id="dropdown">
+                    <i class="fa-solid fa-globe"></i>
+
+                    <select>
+                        <option>English</option>
+                        <option>Urdu</option>
+                        <option>Hindi</option>
+                        <option>Arabic</option>
+                        <option>German</option>
+                    </select>
+                </div>
+
+                <button id="signin">Sign In</button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- HERO TEXT -->
+
+        <div id="toptext">
+
+            <h1>Unlimited Movies, TV</h1>
+
+            <h1>Shows and More</h1>
+
+            <h3>Watch Anywhere. Cancel Anytime.</h3>
+
+            <p>
+                Ready to watch? Enter your email to create or restart
+                your membership.
+            </p>
+
+            <p>Starts at Rs 250. Cancel anytime.</p>
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div id="email">
+
+            <input
+                id="emailenter"
+                type="email"
+                placeholder="Enter Email">
+
+            <button id="emailstart">
+                Get Started <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRENDING ================= -->
+
+    <section id="trending">
+
+        <h2 class="section-title">
+            <span></span>
+            Trending Now
+        </h2>
+
+        <div id="moviesimage">
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaEV5naLtlP57UfhZyg8Hwl7HygpDGTGUhmMKfLFiSw&s=10">
+                <strong>1</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS7SDvAfypGiHOfqqj5Cs5V7RNKSF5Xiv6IsCYZgdB-A&s=10">
+                <strong>2</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaEV5naLtlP57UfhZyg8Hwl7HygpDGTGUhmMKfLFiSw&s=10">
+                <strong>3</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe_fIVM6qHlYqrCfhs0FSfiSQVMKJjn_nHo9aGnOWIw&s=10">
+                <strong>4</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0eqLZ58QTVIGEE63xNIch5k_2M9kgFbkDMZ4tTzKaA&s=10">
+                <strong>5</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUF5dYvOh53vaYmH9KiKrrV-Pask8ZySDJ3vLx5Iy8hQ&s=10">
+                <strong>6</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdaEV5naLtlP57UfhZyg8Hwl7HygpDGTGUhmMKfLFiSw&s=10">
+                <strong>7</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe_fIVM6qHlYqrCfhs0FSfiSQVMKJjn_nHo9aGnOWIw&s=10">
+                <strong>8</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm0eqLZ58QTVIGEE63xNIch5k_2M9kgFbkDMZ4tTzKaA&s=10">
+                <strong>9</strong>
+            </div>
+
+            <div class="movie">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUF5dYvOh53vaYmH9KiKrrV-Pask8ZySDJ3vLx5Iy8hQ&s=10">
+                <strong>10</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REASONS ================= -->
+
+    <section id="reason">
+
+        <h2 class="section-title">
+            <span></span>
+            Reasons to join us
+        </h2>
+
+        <div id="boxes">
+
+            <div class="box">
+
+                <div class="icon">
+                    <i class="fa-solid fa-tv"></i>
+                </div>
+
+                <h3>Enjoy on your TV</h3>
+
+                <p>
+                    Watch on Smart TVs, Playstation, Xbox,
+                    Chromecast, Apple TV, Blu-ray players, and more.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="icon">
+                    <i class="fa-solid fa-download"></i>
+                </div>
+
+                <h3>Download your shows</h3>
+
+                <p>
+                    Save your favorites easily and always
+                    have something to watch.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="icon">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+
+                <h3>Watch everywhere</h3>
+
+                <p>
+                    Stream unlimited movies and TV shows
+                    on your phone, tablet, laptop, and TV.
+                </p>
+
+            </div>
+
+
+            <div class="box">
+
+                <div class="icon">
+                    <i class="fa-solid fa-child"></i>
+                </div>
+
+                <h3>Create profiles for kids</h3>
+
+                <p>
+                    Send kids on adventures with their favorite
+                    characters in a space made just for them.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+
+    <section id="faq">
+
+        <h2 class="section-title">
+            <span></span>
+            Frequently Asked Questions
+        </h2>
+
+
+        <div id="question">
+
+            <div class="q">
+                What is Netflix?
+                <span>+</span>
+            </div>
+
+            <div class="q">
+                How much does Netflix cost?
+                <span>+</span>
+            </div>
+
+            <div class="q">
+                Where can I watch?
+                <span>+</span>
+            </div>
+
+            <div class="q">
+                How do I cancel?
+                <span>+</span>
+            </div>
+
+            <div class="q">
+                What can I watch on Netflix?
+                <span>+</span>
+            </div>
+
+            <div class="q">
+                Is Netflix good for kids?
+                <span>+</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EMAIL BELOW ================= -->
+
+    <section id="emailbelow">
+
+        <h2>Ready to watch?</h2>
+
+        <p>
+            Enter your email to create or restart your membership.
+        </p>
+
+        <div id="enterbelow">
+
+            <input
+                type="email"
+                placeholder="Enter Email">
+
+            <button>
+                Get Started
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="footer">
+
+        <h3>Questions? Contact us</h3>
+
+        <div id="lastlines">
+
+            <div>
+                <a>FAQ</a>
+                <a>Investor</a>
+                <a>Privacy</a>
+                <a>Speed Test</a>
+            </div>
+
+            <div>
+                <a>Help Center</a>
+                <a>Jobs</a>
+                <a>Cookie Preferences</a>
+                <a>Legal Notices</a>
+            </div>
+
+            <div>
+                <a>Account</a>
+                <a>Ways to Watch</a>
+                <a>Corporate Information</a>
+                <a>Only on Netflix</a>
+            </div>
+
+            <div>
+                <a>Media Center</a>
+                <a>Terms of Use</a>
+                <a>Contact Us</a>
+            </div>
+
+        </div>
+
+        <p id="copyright">
+            Netflix Clone — Made for practice
+        </p>
+
+    </footer>
+
+</body>
+</html>

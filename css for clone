@@ -1,0 +1,722 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #05070d;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= HERO ================= */
+
+#hero {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#backgroundimage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.95),
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.25)
+        ),
+        linear-gradient(
+            to top,
+            #05070d,
+            transparent 35%
+        );
+}
+
+
+/* ================= NAVBAR ================= */
+
+#top {
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 0 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 2;
+}
+
+#logo {
+    color: #e50914;
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#navright {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#dropdown {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    padding: 0 10px;
+
+    background: rgba(0,0,0,0.7);
+}
+
+#dropdown i {
+    margin-right: 8px;
+}
+
+#dropdown select {
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 14px;
+}
+
+#dropdown option {
+    background: #111;
+}
+
+#signin {
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 18px;
+
+    background: #e50914;
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#signin:hover {
+    background: #b20710;
+}
+
+
+/* ================= HERO TEXT ================= */
+
+#toptext {
+    position: absolute;
+
+    top: 190px;
+    left: 7%;
+
+    z-index: 2;
+
+    max-width: 600px;
+}
+
+#toptext h1 {
+    margin: 0;
+
+    font-size: 50px;
+    line-height: 1.05;
+
+    font-weight: 800;
+}
+
+#toptext h3 {
+    font-size: 22px;
+    margin: 20px 0 15px;
+}
+
+#toptext p {
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+
+/* ================= EMAIL ================= */
+
+#email {
+    position: absolute;
+
+    top: 400px;
+    left: 7%;
+
+    z-index: 2;
+
+    display: flex;
+
+    width: 500px;
+}
+
+#emailenter {
+    flex: 1;
+
+    height: 52px;
+
+    padding: 0 15px;
+
+    border: 1px solid #aaa;
+    border-radius: 5px 0 0 5px;
+
+    background: rgba(20,20,20,0.8);
+
+    color: white;
+
+    font-size: 15px;
+}
+
+#emailenter::placeholder {
+    color: #bbb;
+}
+
+#emailstart {
+    height: 52px;
+
+    padding: 0 25px;
+
+    border: none;
+    border-radius: 0 5px 5px 0;
+
+    background: #e50914;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#emailstart:hover {
+    background: #b20710;
+}
+
+
+/* ================= SECTIONS ================= */
+
+#trending,
+#reason,
+#faq {
+    padding: 40px 5%;
+}
+
+.section-title {
+    font-size: 28px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    width: 6px;
+    height: 28px;
+
+    background: #e50914;
+
+    border-radius: 5px;
+}
+
+
+/* ================= MOVIES ================= */
+
+#moviesimage {
+    display: flex;
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+
+    padding: 5px 5px 20px;
+}
+
+#moviesimage::-webkit-scrollbar {
+    height: 7px;
+}
+
+#moviesimage::-webkit-scrollbar-track {
+    background: #15151c;
+}
+
+#moviesimage::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.movie {
+    position: relative;
+
+    min-width: 180px;
+    height: 270px;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    border: 1px solid #555;
+
+    transition: 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+}
+
+.movie img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.movie strong {
+    position: absolute;
+
+    bottom: -8px;
+    left: 8px;
+
+    font-size: 70px;
+
+    color: white;
+
+    text-shadow:
+        3px 3px 5px black,
+        -2px -2px 2px black;
+}
+
+
+/* ================= REASONS ================= */
+
+#boxes {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.box {
+    min-height: 300px;
+
+    padding: 25px 20px;
+
+    border: 1px solid #444;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #10131d,
+            #171321
+        );
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-7px);
+
+    border-color: #777;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0066ff,
+            #8b00ff,
+            #ff0080
+        );
+}
+
+.icon i {
+    font-size: 32px;
+    color: white;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+
+.box p {
+    color: #d2d2d2;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* ================= FAQ ================= */
+
+#question {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.q {
+    min-height: 60px;
+
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #272933;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.q:hover {
+    background: #3a3b44;
+}
+
+.q span {
+    font-size: 30px;
+}
+
+
+/* ================= EMAIL BELOW ================= */
+
+#emailbelow {
+    margin-top: 20px;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #291338,
+            #090b13 70%
+        );
+}
+
+#emailbelow h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#emailbelow p {
+    color: #ddd;
+}
+
+#enterbelow {
+    display: flex;
+
+    justify-content: center;
+
+    max-width: 650px;
+
+    margin: 25px auto 0;
+}
+
+#enterbelow input {
+    flex: 1;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    border: 1px solid #aaa;
+
+    border-radius: 5px 0 0 5px;
+
+    background: #171922;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+#enterbelow button {
+    height: 50px;
+
+    padding: 0 25px;
+
+    border: none;
+
+    border-radius: 0 5px 5px 0;
+
+    background: #e50914;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER ================= */
+
+#footer {
+    padding: 50px 7%;
+
+    background: #05070d;
+
+    color: #bbb;
+}
+
+#footer h3 {
+    color: white;
+}
+
+#lastlines {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 40px;
+
+    margin-top: 30px;
+}
+
+#lastlines div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+#lastlines a {
+    width: fit-content;
+
+    color: #bbb;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #777;
+
+    padding-bottom: 2px;
+
+    cursor: pointer;
+}
+
+#lastlines a:hover {
+    color: white;
+}
+
+#copyright {
+    margin-top: 50px;
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    #boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #toptext h1 {
+        font-size: 42px;
+    }
+
+    #lastlines {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    #hero {
+        height: 650px;
+    }
+
+    #top {
+        padding: 0 20px;
+    }
+
+    #logo {
+        font-size: 28px;
+    }
+
+    #navright {
+        gap: 7px;
+    }
+
+    #dropdown {
+        padding: 0 7px;
+    }
+
+    #dropdown select {
+        width: 65px;
+    }
+
+    #signin {
+        padding: 8px 12px;
+    }
+
+    #toptext {
+        top: 170px;
+        left: 20px;
+        right: 20px;
+
+        text-align: center;
+    }
+
+    #toptext h1 {
+        font-size: 34px;
+    }
+
+    #toptext h3 {
+        font-size: 18px;
+    }
+
+    #toptext p {
+        font-size: 13px;
+    }
+
+    #email {
+        top: 430px;
+        left: 20px;
+        right: 20px;
+
+        width: auto;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    #emailenter {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #emailstart {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #trending,
+    #reason,
+    #faq {
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .movie {
+        min-width: 145px;
+        height: 220px;
+    }
+
+    .movie strong {
+        font-size: 55px;
+    }
+
+    #boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .box {
+        min-height: 260px;
+    }
+
+    .q {
+        min-height: 55px;
+        font-size: 15px;
+    }
+
+    #enterbelow {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #enterbelow input {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #enterbelow button {
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    #lastlines {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    #dropdown {
+        display: none;
+    }
+
+    #toptext h1 {
+        font-size: 29px;
+    }
+
+    #lastlines {
+        grid-template-columns: 1fr;
+    }
+}
